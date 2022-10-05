@@ -1,0 +1,31 @@
+<div *ngIf="applDetails">
+  <p-card>
+    <ng-template pTemplate="header">
+      View Application
+    </ng-template>
+      <span>Applicant No :</span>
+      {{ applDetails.id }}
+      <br>
+      <span>Applicant Name :</span>
+      {{ applDetails.name }}
+      <br>
+      <span>Applicant User name :</span>
+      {{ applDetails.username }}
+      <br>
+      <span>Email :</span>
+      {{ applDetails.email }}
+      <br>
+      <span>Phone :</span>
+      {{ applDetails.phone }}
+      <br>
+      <span>Website :</span>
+      {{ applDetails.website }}
+      <br>
+      <span>Created At :</span>
+      {{ applDetails.createdAt }}
+      <br>
+      <span>Updated At :</span>
+      {{ applDetails.updatedAt }}
+  </p-card>
+</div>
+<br>

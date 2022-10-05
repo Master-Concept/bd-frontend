@@ -1,0 +1,33 @@
+<form [formGroup]="addApplForm" (submit)="createAppl()">
+  <p-card>
+    <h5 class="card-title">Create Application</h5>
+    <br>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText formControlName="username">
+      <label for="float-input">Username</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText formControlName="email">
+      <label for="float-input">email</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText formControlName="name">
+      <label for="float-input">Name</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText formControlName="phone">
+      <label for="float-input">Phone</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText formControlName="website">
+      <label for="float-input">Website</label>
+    </span>
+    <br>
+    <button pButton type="button" label="Create Application" (click)="createAppl()"></button>
+  </p-card>
+</form>
+<br>
